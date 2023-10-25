@@ -26,6 +26,43 @@ print("Teraz masz", age,"lat, a za rok będzie to " + str(age_next_year) + ". Ro
 
 ```
 
+#### 2. Zapytaj użytkownika o wiek oraz ilość pieniędzy w portfelu. Następnie dokonaj sprawdzenia, czy użytkownik może kupić w sklepie alkohol o wartości 20 zł. Rozpatrz wszystkie 4 przypadki, z których tylko jeden spełnia warunek “jesteś pełnoletni i masz wystarczającą ilość pieniędzy”. Wyświetl stosowną informację dla każdego z przypadków, podając też informację, ile brakuje (w portfelu oraz do pełnoletniości).
+
+```
+from decimal import Decimal
+# Parametry brane od użytkownika
+age = input("Podaj swój wiek: ")
+wallet = Decimal(input("Podaj ilość pieniędzy w swoim portfelu (w PLN): "))
+
+# Przebieg programu
+def change_years(years):
+    if years == 1:
+        return f"{years} rok"
+    elif 2 <= years % 10 <= 4 and (years % 100 < 10 or years % 100 >= 20):
+        return f"{years} lata"
+    else:
+        return f"{years} lat"
+
+alcohol_price = Decimal("20.0")  #Przyjmujemy, że cena alkoholu wynosi 20 zł
+wallet = Decimal(wallet)
+age = int(age)
+
+if wallet < alcohol_price:
+    lack = alcohol_price - wallet
+    
+if age < 18:
+    years = 18 - age
+
+if age < 18 and wallet < alcohol_price: #1 Jesteś niepełnoletni i nie masz funduszy
+    print("Jesteś niepełnoletni! Do pełnoletności brakuje Ci " + str(change_years(years)) + ". Brakuje Ci też", lack, "zł. do pełnej kwoty.")
+elif age >= 18 and wallet < alcohol_price: #2 Jesteś pełnoletni ale nie masz funduszy
+    print("Jesteś pełnoletni ale brakuje Ci", lack, "zł. do pełnej kwoty.")
+elif age < 18 and wallet >= alcohol_price: #3 Jesteś niepełnoletni ale masz fundusze
+    print("Jesteś niepełnoletni! Do pełnoletności brakuje Ci " + str(change_years(years)) + ". Masz wystarczające fundusze aby kupić alkohol o wartości", alcohol_price, "zł.")
+else: #4. jesteś pełnoletni i masz fundusze
+    print("Jesteś pełnoletni i masz wystarczające fundusze aby kupić alkohol o wartości", alcohol_price, "zł.")
+```
+
 #### 3. Napisz prosty kalkulator podatkowy dla podatku dochodowego. Najpierw program niech zapyta użytkownika, czy chce podać dochód miesięczny czy roczny. W przypadku wybrania dochodu miesięcznego oblicz dochód roczny. Następnie na podstawie podanych wartości oblicz wartość rocznego podatku dochodowego w oparciu o I i II próg podatkowy (12% i 32%) - sposób obliczania podatku według progów podatkowych znajdziesz w Internecie. Pomiń kwestie kwoty wolnej od podatku oraz założeń Polskiego Ładu.
 
 ```
