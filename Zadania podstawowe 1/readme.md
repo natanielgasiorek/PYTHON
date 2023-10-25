@@ -111,3 +111,38 @@ for product in products:
 for product, price in prices_products.items():
     print(f"{product}: {price} zł")
 ```
+
+#### Napisz programy, które pobierają od użytkowników odpowiednie liczby (input), a następnie wywołują funkcję, która obliczy: a. pole trójkąta o bokach a,b,c (skorzystaj ze wzoru Herona: https://www.matmana6.pl/wzor-herona)
+
+```
+import math
+
+# Funkcja HERONA
+def area_triangle_heron(a, b, c):
+    
+    def half_c(a, b, c):
+        
+        p = (a + b + c)
+        
+        return p
+     
+    p = half_c(a, b, c)
+    area = math.sqrt(p * (p - a) * (p - b) * (p - c))    
+        
+    return area
+
+# Przebieg programu
+try:
+    a = float(input("Podaj długość boku a: "))
+    b = float(input("Podaj długość boku b: "))
+    c = float(input("Podaj długość boku c: "))
+    
+    if a > 0 and b > 0 and c > 0:
+        area = area_triangle_heron(a, b, c)
+        print(f"Pole trójkąta o bokach {a}, {b} i {c} wynosi: {area}")
+    else:
+        print("Długości boków muszą być dodatnie.")
+        
+except ValueError:
+    print("Błędne dane. Wprowadź poprawne liczby.")
+```
