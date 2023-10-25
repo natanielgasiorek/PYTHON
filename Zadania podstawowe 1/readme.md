@@ -28,3 +28,21 @@ print("Teraz masz", age,"lat, a za rok będzie to " + str(age_next_year) + ". Ro
                                                                                
 #### 4. Zaprogramuj uproszczoną kasę fiskalną. Najpierw poproś użytkownika jednym wywołaniem input() o wpisanie produktów oddzielonych przecinkiem. Następnie dla każdego produktu (rozdziel je korzystając z funkcji poznanych dla stringów, a następnie stwórz z nich zbiór, aby zapewnić, że nie będą się powtarzać) poproś o wpisanie jego ceny i zapisz wszystko w postaci słownika. Na koniec wyświetl wszystkie elementy słownika w postaci “produkt:cena”.
 
+```
+# Parametry brane od użytkownika
+products_input = input("Wprowadź produkty oddzielone przecinkiem: ")
+
+products = [product.strip() for product in products_input.split(',')] #Usówamy ewentualne białe znaki
+
+prices_products = {}
+
+# Poproś użytkownika o cenę dla każdego produktu
+for product in products:
+    if product not in prices_products: # Usówamy duplikaty w ten sposób, wolałem stworzyć listę zamiast używać set.
+        price = float(input(f"Podaj cenę dla produktu '{product}': "))
+        prices_products[product] = price
+    
+# Wyświetl produkty w formie "produkt: cena"
+for product, price in prices_products.items():
+    print(f"{product}: {price} zł")
+```
