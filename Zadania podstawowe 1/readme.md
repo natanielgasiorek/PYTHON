@@ -94,6 +94,8 @@ try:
 except error:
     print("Błędne dane. Wprowadź liczbę.")
 ```
+
+![image](https://github.com/natanielgasiorek/PYTHON/assets/91785152/6c9206c3-37b9-4182-a574-cb8cd6371a24)
                                                                                
 #### 4. Zaprogramuj uproszczoną kasę fiskalną. Najpierw poproś użytkownika jednym wywołaniem input() o wpisanie produktów oddzielonych przecinkiem. Następnie dla każdego produktu (rozdziel je korzystając z funkcji poznanych dla stringów, a następnie stwórz z nich zbiór, aby zapewnić, że nie będą się powtarzać) poproś o wpisanie jego ceny i zapisz wszystko w postaci słownika. Na koniec wyświetl wszystkie elementy słownika w postaci “produkt:cena”.
 
