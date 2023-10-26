@@ -26,6 +26,8 @@ print("Teraz masz", age,"lat, a za rok będzie to " + str(age_next_year) + ". Ro
 
 ```
 
+![image](https://github.com/natanielgasiorek/PYTHON/assets/91785152/268f934c-5135-4fcc-b38d-482d0f7e51a4)
+
 #### 2. Zapytaj użytkownika o wiek oraz ilość pieniędzy w portfelu. Następnie dokonaj sprawdzenia, czy użytkownik może kupić w sklepie alkohol o wartości 20 zł. Rozpatrz wszystkie 4 przypadki, z których tylko jeden spełnia warunek “jesteś pełnoletni i masz wystarczającą ilość pieniędzy”. Wyświetl stosowną informację dla każdego z przypadków, podając też informację, ile brakuje (w portfelu oraz do pełnoletniości).
 
 ```
