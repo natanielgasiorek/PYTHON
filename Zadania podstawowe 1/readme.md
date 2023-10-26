@@ -118,6 +118,8 @@ for product, price in prices_products.items():
     print(f"{product}: {price} zł")
 ```
 
+![image](https://github.com/natanielgasiorek/PYTHON/assets/91785152/52747587-9221-467a-b3a8-fb61c64e5d1d)
+
 #### Napisz programy, które pobierają od użytkowników odpowiednie liczby (input), a następnie wywołują funkcję, która obliczy: a. pole trójkąta o bokach a,b,c (skorzystaj ze wzoru Herona: https://www.matmana6.pl/wzor-herona)
 
 ```
