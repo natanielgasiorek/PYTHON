@@ -154,3 +154,5 @@ try:
 except ValueError:
     print("Błędne dane. Wprowadź poprawne liczby.")
 ```
+
+![image](https://github.com/natanielgasiorek/PYTHON/assets/91785152/d1eb7c37-28da-4d1f-81e6-60894535fa9a)
