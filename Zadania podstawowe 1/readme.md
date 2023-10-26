@@ -65,6 +65,8 @@ else: #4. jesteś pełnoletni i masz fundusze
     print("Jesteś pełnoletni i masz wystarczające fundusze aby kupić alkohol o wartości", alcohol_price, "zł.")
 ```
 
+![image](https://github.com/natanielgasiorek/PYTHON/assets/91785152/0d320e58-6c2e-450a-9174-3b59413d3e98)
+
 #### 3. Napisz prosty kalkulator podatkowy dla podatku dochodowego. Najpierw program niech zapyta użytkownika, czy chce podać dochód miesięczny czy roczny. W przypadku wybrania dochodu miesięcznego oblicz dochód roczny. Następnie na podstawie podanych wartości oblicz wartość rocznego podatku dochodowego w oparciu o I i II próg podatkowy (12% i 32%) - sposób obliczania podatku według progów podatkowych znajdziesz w Internecie. Pomiń kwestie kwoty wolnej od podatku oraz założeń Polskiego Ładu.
 
 ```
