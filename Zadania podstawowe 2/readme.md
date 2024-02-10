@@ -61,6 +61,20 @@ class Circle:
     def display_name(self):
         print("Figure:", self.name)
 ```
+### 2. (1pkt) Tworzymy żółwia.
+Dokończ kod i zaprezentuj jego działanie na przykładzie
+class Turtle:
+def __init__(self, …, …):
+ # inicjalizacja: pola name i speed z konstruktora, pole prywatne __x określające położenie, na starcie = 0
+
+def say_name(self):
+ # printer, przedstaw żółwia i powiedz jaką ma szybkość
+
+def move(self, distance):
+ # zmień wartość położenia o distance
+
+def get_position(self):
+ # zwróć położenie
 ```
 #2.
 class Turtle:
@@ -77,6 +91,12 @@ class Turtle:
     def get_position(self):
         return self.__x
 ```
+### 3. (1pkt) Projektowanie klas
+Zaprojektuj przykładowe definicje klas (co najmniej 3 różne pola i 3 różne metody) oraz stwórz przykładowy obiekt dla:
+a. pracownika w bazie danych pracodawcy
+b. potwora - przeciwnika z gry komputerowej
+c. lodówki (* okazja na poćwiczenie kompozycji i/lub agregacji)
+
 ```
 #3.
 class Employee:
@@ -142,6 +162,11 @@ class Refrigerator:
         else:
             print(f"{item} not found in the refrigerator.")
 ```
+### 4. (2 pkt) Schematy dziedziczenia
+Opracuj definicje odpowiednich klas oraz przykładowy schemat dziedziczenia (klasa-rodzic “szersza” i klasa-dziecko “węższa”,
+z przykładami atrybutów i działań) dla poniższych klas (możesz tu wykorzystać enkapsulację):
+a. Ptak (kontekst: program wizualizujący/opisujący różne gatunki zwierząt)
+b. Wojownik w grze komputerowej (kontekst: obiekt gracza tworzony na starcie gry RPG)
 ```
 #4.
 
