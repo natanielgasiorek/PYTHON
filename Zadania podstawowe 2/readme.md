@@ -1,3 +1,10 @@
+### 1. (1pkt) Pola figur raz jeszcze
+Zaprojektuj program do obliczania pól i obwodów trzech figur: trójkąta (dla uproszczenia przy obwodzie: przyjmij, że będzie równoramienny), prostokąta i koła, ale wykorzystując
+programowanie obiektowe (nie ma tu potrzeby interakcji z użytkownikiem w postaci input()).
+Każda klasa musi posiadać konstruktor, który zainicjalizuje odpowiednie pola (w tym pole przechowujące nazwę figury) oraz trzy metody (bez argumentów): do obliczania i zwracania pola i
+obwodu oraz wyświetlania nazwy figury, korzystające z odpowiednich pól obiektu. W konstruktorze zadbaj o to, aby nie mógł być stworzony obiekt z niepoprawnymi wartościami pól - w
+przypadku próby zainicjalizowania niewłaściwymi wartościami rzuć wyjątek, np. ValueError. Na podstawie definicji klas stwórz odpowiednie obiekty i zaprezentuj działanie metod.
+
 ```
 #1.
 import math
